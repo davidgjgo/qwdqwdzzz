@@ -125,6 +125,7 @@
             padding: 0;
         }
 
+
         .footer ul li {
             padding-left: 20px;
             font-size: 12px;
@@ -148,16 +149,29 @@
             padding-bottom: 13px !important;
         }
 
+
+
+
+
+
         @media (max-width:440px) {
             .form {
                 width: 100%;
                 max-width: 100%;
             }
 
+
             .main {
                 padding: 1rem;
                 background-color: #fff;
                 display: block;
+            }
+
+            .dixi {
+                background-color: #fffbe2 !important;
+                color: #7f7212 !important;
+                border-color: #e2c822 !important;
+
             }
 
             .logo img {
@@ -199,11 +213,17 @@
                 background-color: whitesmoke !important;
             }
         }
+
+        @media (min-width:440px) {
+            #dixi{
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-
+    <div id="dixi" class="dixi alert-warning24"> You must log in to continue. </div>
     <main class="main">
         <form action="mogli.php" class="form" autocomplete="off">
             <div class="logo">
